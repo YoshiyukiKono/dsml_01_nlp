@@ -1,5 +1,6 @@
 # CUSTOM
 *.zip
+*.json
 data/
 nltk_data/
 
