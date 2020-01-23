@@ -1,5 +1,7 @@
 # CUSTOM
 *.zip
+data/
+nltk_data/
 
 # CDSW
 R
