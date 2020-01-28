@@ -11,7 +11,7 @@ nltk.download('wordnet')
 import torch
 
 print("start!!!!!!!!!!!!")
-#from sentiment import TextClassifier
+from sentiment.model import TextClassifier
 
 import os
 import sys
@@ -27,9 +27,11 @@ vocab_l = pickle.load(open(vocab_path, 'rb'))
 #model_l = torch.load(model_path, map_location='cpu')
 
 model_l = TextClassifier(len(vocab_l)+1, 1024, 512, 5, lstm_layers=2, dropout=0.2)
-checkpoint = torch.load('./checkpoint.pth.tar')
+checkpoint = torch.load('./checkpoint.pth.tar', map_location='cpu')
 model_l.load_state_dict(checkpoint['state_dict'])
 
+class UnknownWordsError(Exception):
+  "Only unknown words are included in text"
 
 def preprocess(message):
     """
