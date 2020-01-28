@@ -1,6 +1,8 @@
 # CUSTOM
 *.zip
 *.json
+*.torch
+*.tar
 data/
 nltk_data/
 
