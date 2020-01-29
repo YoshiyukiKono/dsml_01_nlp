@@ -1,4 +1,3 @@
-```
 from pyhive import hive
 from TCLIService.ttypes import TOperationState
 cursor = hive.connect('ip-10-0-0-55.ap-northeast-1.compute.internal', port=10000).cursor()
@@ -12,4 +11,3 @@ while status in (TOperationState.INITIALIZED_STATE, TOperationState.RUNNING_STAT
     status = cursor.poll().operationState
 
 print(cursor.fetchall())
-```
