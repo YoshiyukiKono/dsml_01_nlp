@@ -3,6 +3,7 @@
 *.json
 *.torch
 *.tar
+*.pickle
 data/
 nltk_data/
 
