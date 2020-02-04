@@ -10,15 +10,15 @@ https://github.com/YoshiyukiKono/cloudera-demo-env
 
 ## Cloudera Data Science Workbench (CDSW) について
 
-下記ページに、この演習を始めるに当たっての、CDSW操作の概要を記します。スクリーンショットを掲載していますので、適宜ご参照ください。
-
-[CDSW操作](./docs/cdsw.md)
-
 CDSW環境にログインし、このリポジトリを指定して新しいCDSWプロジェクトを作成します。
 
 https://github.com/YoshiyukiKono/dsml_01_nlp.git
 
 CDSWプロジェクトから、Jupyter notebookを使ったセッションを開始することで、演習を始めることができます。
+
+下記リンクに、この演習を始めるに当たっての、CDSW操作の概要を記します。
+
+[CDSW操作](./docs/cdsw.md)
 
 ## 演習について
 
