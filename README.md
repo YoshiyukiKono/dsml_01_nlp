@@ -24,7 +24,7 @@ CDSWプロジェクトから、Jupyter notebookを使ったセッションを開
 
 Jupyter notebookが利用可能な環境が準備できたら、下記のファイルを開いてください。
 
-https://github.com/YoshiyukiKono/dsml_01_nlp/blob/master/nlp_solution.ipynb
+./nlp_solution.ipynb
 
 演習の主要な部分はこのJupyter notebookを使って実施されます。
 
