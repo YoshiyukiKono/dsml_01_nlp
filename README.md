@@ -1,5 +1,4 @@
-# Cloudera Data Science/Machine Learning Meetup #1 
-# Deep Learning Hands-on: オルタナティブデータと自然言語処理(NLP)
+# オルタナティブデータと自然言語処理(NLP)
 
 ## はじめに
 
