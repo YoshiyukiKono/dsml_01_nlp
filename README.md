@@ -12,7 +12,7 @@ https://github.com/YoshiyukiKono/cloudera-demo-env
 
 下記ページに、この演習を始めるに当たっての、CDSW操作の概要を記します。スクリーンショットを掲載していますので、適宜ご参照ください。
 
-[この演習のためのCDSW操作概要](./docs/cdsw.md)
+[CDSW操作](./docs/cdsw.md)
 
 CDSW環境にログインし、このリポジトリを指定して新しいCDSWプロジェクトを作成します。
 
