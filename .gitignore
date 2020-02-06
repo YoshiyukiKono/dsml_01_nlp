@@ -2,8 +2,8 @@
 *.zip
 *.json
 *.torch
-*.tar
-*.pickle
+#*.tar
+#*.pickle
 data/
 nltk_data/
 

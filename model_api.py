@@ -11,7 +11,7 @@ nltk.download('wordnet')
 import torch
 
 print("start!!!!!!!!!!!!")
-from sentiment.model import TextClassifier
+from sentiment.model import SentimentClassifier
 
 import os
 import sys
@@ -26,7 +26,7 @@ vocab_l = pickle.load(open(vocab_path, 'rb'))
 #model_path = cur_dir + "/" + "model.torch"
 #model_l = torch.load(model_path, map_location='cpu')
 
-model_l = TextClassifier(len(vocab_l)+1, 1024, 512, 5, lstm_layers=2, dropout=0.2)
+model_l = SentimentClassifier(len(vocab_l)+1, 1024, 512, 5, lstm_layers=2, dropout=0.2)
 checkpoint = torch.load('./checkpoint.pth.tar', map_location='cpu')
 model_l.load_state_dict(checkpoint['state_dict'])
 
@@ -130,7 +130,7 @@ def predict_api(args):
 
 #args = {"text": "Google is working on self driving cars, I'm bullish on $goog"}
 #args = {"text": "I'm bullish on $goog"}
-args = {"text": "I'll strongly recommend to buy on $goog"}
+#args = {"text": "I'll strongly recommend buying $goog"}
 #args = {"text": "elyoq baoq pquq $goog"}
-result = predict_api(args)
-print(result)
+#result = predict_api(args)
+#print(result)

@@ -147,7 +147,7 @@ def create_model(train_features, train_labels, vocab):
 
 
 
-class TextClassifier(nn.Module):
+class SentimentClassifier(nn.Module):
     def __init__(self, vocab_size, embed_size, lstm_size, output_size, lstm_layers=1, dropout=0.1):
         """
         Initialize the model by setting up the layers.
